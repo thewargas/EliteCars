@@ -1,0 +1,7 @@
+.feedback__image {
+    position: absolute;
+    z-index: -1;
+    top: 90px;
+    right: -170px;
+    overflow: hidden;
+}

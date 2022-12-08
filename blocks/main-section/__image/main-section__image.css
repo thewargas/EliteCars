@@ -1,0 +1,5 @@
+.main-section__image {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}

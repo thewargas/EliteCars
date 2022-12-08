@@ -1,0 +1,9 @@
+.main-section {
+    margin-bottom: 100px;
+    width: 100%;
+    min-height: 705px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}

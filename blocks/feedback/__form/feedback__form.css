@@ -1,0 +1,6 @@
+.feedback__form {
+    max-width: 344px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

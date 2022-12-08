@@ -1,0 +1,6 @@
+.car-park__cards {
+    max-width: 100%;
+    display: grid;
+    gap: 40px 24px;
+    grid-template-columns: repeat(auto-fit, minmax(calc((100% - 48px) / 3), 1fr));
+}

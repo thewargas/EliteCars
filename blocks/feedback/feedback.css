@@ -1,0 +1,7 @@
+.feedback {
+    width: 1200px;
+    min-height: 596px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}

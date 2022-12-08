@@ -1,0 +1,7 @@
+.characteristic {
+    margin: 0;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
