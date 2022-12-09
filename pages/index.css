@@ -17,12 +17,12 @@
 /* Content */
 @import url(../blocks/content/content.css);
 
-/* Main section*/
+/* Main section */
 @import url(../blocks/main-section/main-section.css);
 @import url(../blocks/main-section/__title/main-section__title.css);
 @import url(../blocks/main-section/__subtitle/main-section__subtitle.css);
 @import url(../blocks/main-section/__buton/main-section__button.css);
-/* Section car-park*/
+/* Section car-park */
 @import url(../blocks/car-park/car-park.css);
 @import url(../blocks/car-park/__title/car-park__title.css);
 @import url(../blocks/car-park/__cards/car-park__cards.css);
@@ -54,3 +54,11 @@
 /* Footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
+/* Popup */
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_active/popup_active.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/__close-button-image/popup__close-button-image.css);
+
