@@ -354,7 +354,9 @@
                   type="tel"
                   name="phone"
                   placeholder="Ваш телефон"
-                  minlength="11"
+                  minlength="18"
+                  maxlength="18"
+                  data-tel-input
                   required
           />
           <span class="feedback__input-error phone-input-error"></span>
@@ -399,5 +401,6 @@
     </div>
   <script src="./scripts/script.js"></script>
   <script src="./scripts/validate.js"></script>
+  <script src="./scripts/phone-mask.js"></script>
   </body>
 </html>

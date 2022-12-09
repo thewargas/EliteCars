@@ -6,6 +6,28 @@ configValidation = {
   inputErrorClass: "feedback__input_type_error",
   errorClass: "feedback__input-error_active",
 };
+const checkInputValidity = (formElement, inputElement) => {
+  if (!inputElement.validity.valid) {
+    showInputError(formElement, inputElement, inputElement.validationMessage);
+  } else {
+    hideInputError(formElement, inputElement);
+  }
+};
+
+function showInputError(formElement, inputElement, errorMessage) {
+  const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
+  inputElement.classList.add(configValidation.inputErrorClass);
+  errorElement.textContent = errorMessage;
+  errorElement.classList.add(configValidation.errorClass);
+}
+
+function hideInputError(formElement, inputElement) {
+  const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
+  inputElement.classList.remove(configValidation.inputErrorClass);
+  errorElement.classList.remove(configValidation.errorClass);
+  errorElement.textContent = "";
+}
+
 const enableValidation = (enterOptions) => {
   const validationOptions = enterOptions;
   const formElement = document.querySelector(validationOptions.formSelector);
@@ -27,28 +49,6 @@ const enableValidation = (enterOptions) => {
     return inputList.some((inputElement) => {
       return !inputElement.validity.valid;
     });
-  }
-
-  const checkInputValidity = (formElement, inputElement) => {
-    if (!inputElement.validity.valid) {
-      showInputError(formElement, inputElement, inputElement.validationMessage);
-    } else {
-      hideInputError(formElement, inputElement);
-    }
-  };
-
-  function showInputError(formElement, inputElement, errorMessage) {
-    const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
-    inputElement.classList.add(validationOptions.inputErrorClass);
-    errorElement.textContent = errorMessage;
-    errorElement.classList.add(validationOptions.errorClass);
-  }
-
-  function hideInputError(formElement, inputElement) {
-    const errorElement = formElement.querySelector(`.${inputElement.id}-error`);
-    inputElement.classList.remove(validationOptions.inputErrorClass);
-    errorElement.classList.remove(validationOptions.errorClass);
-    errorElement.textContent = "";
   }
 };
 
