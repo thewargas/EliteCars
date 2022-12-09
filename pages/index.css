@@ -1,6 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 @import url(../blocks/button/button.css);
+@import url(../blocks/button/_disabled/button_disbaled.css);
 @import url(../blocks/container/container.css);
 @import url(../blocks/container/_type/container_type_header.css);
 @import url(../blocks/container/_type/container_type_main-section.css);
@@ -18,7 +19,6 @@
 
 /* Main section*/
 @import url(../blocks/main-section/main-section.css);
-@import url(../blocks/main-section/__image/main-section__image.css);
 @import url(../blocks/main-section/__title/main-section__title.css);
 @import url(../blocks/main-section/__subtitle/main-section__subtitle.css);
 @import url(../blocks/main-section/__buton/main-section__button.css);
@@ -47,6 +47,9 @@
 @import url(../blocks/feedback/__image/feedback__image.css);
 @import url(../blocks/feedback/__form/feedback__form.css);
 @import url(../blocks/feedback/__input/feedback__input.css);
+@import url(../blocks/feedback/__input/_type/feedback__input_type_error.css);
+@import url(../blocks/feedback/__input-error/feedback__input-error.css);
+@import url(../blocks/feedback/__input-error/_active/feedback__input-error_active.css);
 @import url(../blocks/feedback/__button/feedback__button.css);
 /* Footer */
 @import url(../blocks/footer/footer.css);

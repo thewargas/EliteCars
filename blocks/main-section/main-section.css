@@ -6,4 +6,8 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    background-image: url(../../images/background.svg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
 }

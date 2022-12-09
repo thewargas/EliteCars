@@ -34,7 +34,6 @@
     </header>
     <main class="content">
       <section class="main-section" id="main">
-        <img class="main-section__image" src="./images/background.svg" alt="Урус, машина">
         <div class="container container_type_main-section">
           <h1 class="main-section__title">Аренда премиальных автомобилей</h1>
           <p class="main-section__subtitle">В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно распространенных серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать за рулем настоящей легенды и узнать, на что она способна за пределами гоночной трассы!</p>
@@ -338,25 +337,39 @@
         <h2 class="feedback__title">Узнать цену и забронировать</h2>
         <p class="feedback__subtitle">Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования</p>
         <img class="feedback__image" src="./images/rolls.svg" alt="Машина, Rolls-Royce">
-        <form class="feedback__form" action="#">
+        <form class="feedback__form" action="#" novalidate>
           <input
+                  id="name-input"
                   class="feedback__input"
                   type="text"
+                  name="name"
                   placeholder="Ваше имя"
+                  minlength="2"
                   required
           />
+          <span class="feedback__input-error name-input-error"></span>
           <input
+                  id="phone-input"
                   class="feedback__input"
                   type="tel"
+                  name="phone"
                   placeholder="Ваш телефон"
+                  minlength="11"
                   required
           />
+          <span class="feedback__input-error phone-input-error"></span>
           <input
+                  id="car-name-input"
                   class="feedback__input"
                   type="text"
+                  name="car-name"
                   placeholder="Автомобиль, который вас интересует"
+                  minlength="4"
+                  maxlength="40"
+                  required
           />
-          <button class="button feedback__button" type="submit">Узнать цену</button>
+          <span class="feedback__input-error car-name-input-error"></span>
+          <button class="button button_disabled feedback__button" type="submit">Узнать цену</button>
         </form>
       </section>
     </main>
@@ -369,5 +382,7 @@
         />
         <p class="footer__copyright">© Все права защищены</p></div>
     </footer>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/validate.js"></script>
   </body>
 </html>
