@@ -1,6 +1,9 @@
 const form = document.querySelector(`.feedback__form`);
 const popup = document.querySelector(`.popup`);
-
+const buttons = document.querySelectorAll(".card__button");
+const feedBack = document.querySelector(".feedback");
+const mainButton = document.querySelector(".main-section__button");
+const carPark = document.querySelector(".car-park");
 
 function handleCloseByEsc(event) {
     const key = event.key;
@@ -41,4 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener('scroll', () => {
         elem.style.backgroundPositionX = '0' + (0.2 * window.pageYOffset) + 'px';
     })
+});
+
+mainButton.addEventListener('click', () => {
+    carPark.scrollIntoView({behavior: "smooth"});
+});
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        feedBack.scrollIntoView({behavior: "smooth"});
+    });
 });
