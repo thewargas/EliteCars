@@ -5,6 +5,7 @@
     cursor: default;
     opacity: 20%;
 }
-.popup__submit-button:hover {
-    opacity: 0.2;
+.button_disabled:hover {
+    opacity: 20%;
+    cursor: not-allowed;
 }

@@ -4,6 +4,7 @@ const buttons = document.querySelectorAll(".card__button");
 const feedBack = document.querySelector(".feedback");
 const mainButton = document.querySelector(".main-section__button");
 const carPark = document.querySelector(".car-park");
+const carName = document.querySelector(".feedback__input-car");
 
 function handleCloseByEsc(event) {
     const key = event.key;
@@ -52,6 +53,8 @@ mainButton.addEventListener('click', () => {
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
+        carName.value = button.closest(`.card__info`).querySelector(".card__title").textContent;
+        checkInputValidity(form, carName);
         feedBack.scrollIntoView({behavior: "smooth"});
     });
 });
